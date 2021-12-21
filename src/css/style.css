@@ -72,7 +72,7 @@ html {
 }
 .loading-spinner__content {
   border: 10px solid #9356DC;
-  border-left-color: #FF79DA;
+  border-left-color: #99E2D0;
   border-right-color: #FF79DA;
   border-radius: 50%;
   width: 50px;
