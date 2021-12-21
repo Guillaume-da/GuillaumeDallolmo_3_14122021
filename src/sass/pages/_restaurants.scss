@@ -1,0 +1,100 @@
+.restaurants {
+    background: #f6f6f6;
+    padding: 50px 20px 100px 20px;
+    
+    &__title {
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        
+        @include breakpoint-large {
+            font-size: 27px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        
+    }
+    &__item-link {
+        color: black;
+        text-decoration: none;
+        @include breakpoint-large {
+            width: 35%;
+        }
+    }
+    &__container {
+        @include breakpoint-large {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            padding: 0 20px;
+        }
+    }
+    &__item {
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+        margin-bottom: 20px;
+        position: relative;
+    }
+    &__item-title {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 8px;
+    }
+    &__new {
+        background: $third-color;
+        border-radius: 5px;
+        padding: 10px 15px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+    &__img {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        height: 185px;
+        width: 100%;
+        object-fit: cover;
+
+        @include breakpoint-small {
+            height: 265px;
+        }
+        @include breakpoint-very-large {
+            height: 265px;
+        }
+    }
+    &__text-container {
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__heart-icon-container {
+        font-size: 30px;
+        position: relative;
+        width: 45px;
+        &:hover {
+            .restaurants__heart-icon--colorized {
+                transform: scale(1.1);
+            }
+        }
+    }
+    &__heart-icon {
+        font-size: 30px;
+        margin-left: 5px;
+        &--colorized {
+            background-clip: text;
+            font-size: 30px;
+            background: -webkit-linear-gradient(240deg, $primary-color, $secondary-color);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-family: "Font Awesome 5 Free"; 
+            font-weight: 900; 
+            content: "\f004";
+            position: absolute;
+            left: 5px;
+            transition: all 0.4s ease-in-out;
+            transform: scale(0);
+        }
+        
+    }
+}

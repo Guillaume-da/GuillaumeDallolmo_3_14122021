@@ -1,0 +1,46 @@
+.call-to-action {
+    background-color: #f6f6f6;
+    text-align: center;
+    &__map-icon {
+        margin-right: 10px;
+    }
+    &__location {
+        background: #eaeaea;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 10px 20px -12px inset, rgba(0, 0, 0, 0.3) 0px 10px 20px -18px inset;
+        font-size: 17px;
+        display: block;
+        text-align: center;
+        padding: 18px 0;
+    }
+    &__content {
+        padding: 60px 20px;
+        p {
+            font-size: 20px;
+            font-weight: 100;
+            line-height: 25px;
+            margin-bottom: 30px;
+        }
+
+        @include breakpoint-very-large {
+            padding: 120px 20px;
+        }
+    }
+    &__title {
+        font-size: 31px;
+        font-weight: bold;
+        line-height: 35px;
+        margin-bottom: 20px;
+    }
+    &__button {
+        font-size: 16px;
+        margin-top: 20px;
+        padding: 20px;
+
+        &:hover {
+            @include button-hover;
+        }
+        @include breakpoint-very-large {
+            font-size: 18px;
+        }
+    }
+}

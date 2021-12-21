@@ -1,0 +1,88 @@
+.how-it-works {
+    padding: 60px 30px;
+    @include breakpoint-very-large {
+        padding: 60px 0;
+    }
+    &__title {
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        @include breakpoint-very-large {
+            font-size: 27px;
+            text-align: center;
+        }
+    }
+    &__icon {
+        font-size: 20px;
+        &--colorized {
+            color: $primary-color;
+        }
+    }
+    &__list {
+        @include breakpoint-very-large {
+            display: flex;
+            margin: 0 auto;
+            padding: 40px 0;
+            column-gap: 95px;
+            width: max-content;
+        }
+    }
+    &__link {
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+        display: flex;
+        column-gap: 30px;
+        height: auto;
+        margin-top: 25px;
+        padding: 30px 40px;
+        position: relative;
+        &--colorized {
+            @include highlighted-color;
+        }
+    }
+    &__link::before {
+        background: $primary-color;
+        border-radius: 50%;
+        width: 26px;
+        content:"";
+        height: 26px;
+        position: absolute;
+        left: -13px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    &__link:first-child::after {
+        color: white;
+        content: "1";
+        font-size: 16px;
+        position: absolute;
+        left: -5px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    &__link:nth-child(2)::after {
+        color: white;
+        content: "2";
+        font-size: 16px;
+        position: absolute;
+        left: -5px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    &__link:last-child::after {
+        color: white;
+        content: "3";
+        font-size: 16px;
+        position: absolute;
+        left: -5px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    &__text {
+        font-weight: 500;
+
+        @include breakpoint-very-large {
+            font-size: 19px;
+        }
+    }
+}

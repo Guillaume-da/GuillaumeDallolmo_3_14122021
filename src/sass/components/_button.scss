@@ -1,0 +1,9 @@
+.button {
+    background: linear-gradient(350deg, $primary-color, $secondary-color);
+    border: none;
+    border-radius: 40px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 35px -5px, rgba(0, 0, 0, 0.3) 0px 10px 16px -8px;
+    color: white;
+    font-weight: bold;
+    transition: all 0.5s ease-in-out;
+}

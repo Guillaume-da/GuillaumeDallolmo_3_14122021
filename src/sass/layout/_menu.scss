@@ -1,0 +1,225 @@
+.menu {
+    &__img {
+        width: 100%;
+        @include breakpoint-very-large {
+            max-height: 500px;
+            object-fit: cover;
+        }
+    }
+    &__title-container {
+        align-items: center;
+        display: flex;
+        column-gap: 4.5%;
+        @include breakpoint-large {
+            column-gap: 7.5%;
+        }
+        @include breakpoint-very-large {
+            column-gap: 7.5%;
+        }
+    }
+    &__title {
+        font-family: 'Shrikhand', cursive;
+        font-size: 30px;
+        width: 80%;
+        @include breakpoint-small {
+            font-size: 37px;
+            width: 86%;
+        }
+    }
+    &__heart-icon-container {
+        font-size: 30px;
+        position: relative;
+        width: 45px;
+        &:hover {
+            .menu__heart-icon--colorized {
+                transform: scale(1.1);
+            }
+        }
+    }
+    &__heart-icon {
+        font-size: 30px;
+        margin-left: 5px;
+        &--colorized {
+            background-clip: text;
+            font-size: 30px;
+            background: -webkit-linear-gradient(240deg, $primary-color, $secondary-color);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-family: "Font Awesome 5 Free"; 
+            font-weight: 900; 
+            content: "\f004";
+            position: absolute;
+            left: 5px;
+            transition: all 0.4s ease-in-out;
+            transform: scale(0);
+        }
+        
+    }
+    &__item-text-container {
+        padding: 15px;
+        width: 100%;
+
+        @include breakpoint-small {
+            width: 140%;
+        }
+        @include breakpoint-large {
+            width: 220%;
+        }
+        @include breakpoint-very-large {
+            width: 230%;
+        }
+    }
+    &__content {
+        background: #f6f6f6;
+        padding: 40px 15px 60px 15px;
+        border-top-right-radius: 40px;
+        border-top-left-radius: 40px;
+        position: relative;
+        top: -50px;
+
+        @include breakpoint-very-large {
+            padding: 40px 160px 60px 160px;
+        }
+    }
+    &__check-icon-container {
+        background: $third-color;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        transition: transform 0.5s ease-in-out;
+        position: relative;
+        right: -150px;
+        width: 23%;
+
+        @include breakpoint-very-large {
+            right: -150px;
+        }
+    }
+    &__check-icon {
+        color: white;
+        font-size: 20px;
+        transition: transform 0.8s ease-in-out;
+    }
+    &__type-title {
+        margin: 30px 0;
+        text-transform: uppercase;
+        position: relative;
+        margin-left: 10px;
+
+        @include breakpoint-very-large {
+            font-size: 21px;
+        }
+    }
+    &__type-title::after {
+        content: '';
+        position: absolute;
+        width: 40px;
+        height: 4px;
+        top: 23px;
+        left: 0;
+        background: $third-color;
+    }
+    &__item {
+        animation: slide-top 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        background: white;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 10px;
+        display: flex;
+        height: auto;
+        margin-bottom: 20px;
+        overflow: hidden;
+        position: relative;
+        top: 25px;
+        width: 100%;
+        &:hover {
+            display: flex;
+            .menu__check-icon-container {
+                transform: translateX(-150px);
+            }
+            .menu__item-description-container {
+                width: 100%;
+            }
+            .menu__item-description-container span:first-child {
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+                width:150px;
+            }
+            .menu__check-icon {
+                transform: rotate(360deg);
+            }
+        }
+    }
+    &__item-title {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+
+        @include breakpoint-very-large {
+            font-size: 22px;
+        }
+    }
+    &__item-description-container {
+        display: flex;
+        font-size: 14px;
+        justify-content: space-between;
+        transition: width 0.55s ease-in-out;
+        width: calc(100% + 50px);
+        
+        @include breakpoint-small {
+            width: calc(100% + 75px);
+        }
+        @include breakpoint-very-large {
+            font-size: 18px;
+            width: calc(100% + 85px);
+        }
+    }
+    &__item-price {
+        font-weight: bold;
+    }
+    &__order-button-link {
+        text-decoration: none;
+    }
+    &__order-button {
+        display: block;
+        font-size: 15px;
+        padding: 15px 40px;
+        margin: 50px auto 10px auto;
+
+        &:hover {
+            @include button-hover;
+        }
+        
+        @include breakpoint-very-large {
+            font-size: 18px;
+        }
+    }
+}
+
+
+// Menu animation on loading page
+
+  @keyframes slide-top {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+              opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(-25px);
+              transform: translateY(-25px);
+              opacity: 1;
+    }
+  }
+
+  // Add delay to each item
+
+@for $i from 1 through 10 {
+    .menu__content .menu__item:nth-child(#{$i}n) {
+        animation-delay: #{$i * 0.15}s;
+    }
+}
+  

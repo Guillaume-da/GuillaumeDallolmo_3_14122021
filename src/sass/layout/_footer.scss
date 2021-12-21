@@ -1,0 +1,55 @@
+.footer {
+    background: #353535;
+    color: white;
+    margin-top: -50px;
+    padding: 30px;
+    @include breakpoint-very-large {
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+    }
+    &__svg-link {
+        width: auto;
+    }
+    &__svg {
+        color: white;
+        margin-bottom: 20px;
+        width: 30%;
+        @include breakpoint-very-large {
+            margin-bottom: 0;
+            width: 100%;
+        }
+    }
+    &__list {
+        a {
+            color: white;
+            text-decoration: none;
+        }
+        @include breakpoint-very-large {
+            column-gap: 65px;
+            display: flex;
+        }
+    }
+    &__link {
+        margin-bottom: 10px;
+        @include breakpoint-very-large {
+            a {
+                display: inline-block;
+                width: 200px;
+            }
+        }
+    }
+    &__link:last-child {
+        margin-bottom: 0;
+    }
+    &__icon {
+        margin-right: 10px;
+        &--small {
+            font-size: 11px;
+        }
+
+        @include breakpoint-very-large {
+            margin-right: 5px;
+        }
+    }
+}

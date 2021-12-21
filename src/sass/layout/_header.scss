@@ -1,0 +1,30 @@
+.header {
+    text-align: center;
+    position: relative;
+    &__arrow-link {
+        color: black;
+    }
+    &__arrow {
+        font-size: 18px;
+        left: 28px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        @include breakpoint-small {
+            font-size: 25px;
+        }
+        @include breakpoint-very-large {
+            font-size: 30px;
+        }
+    }
+    &__logo {
+        width: 46%;
+        padding: 15px 0;
+        @include breakpoint-small {
+            width: 29%;
+        }
+        @include breakpoint-very-large {
+            width: 23%;
+        }
+    }
+}
