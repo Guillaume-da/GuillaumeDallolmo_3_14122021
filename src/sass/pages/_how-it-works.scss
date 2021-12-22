@@ -7,6 +7,11 @@
         font-size: 22px;
         font-weight: bold;
         margin-bottom: 10px;
+
+        @include breakpoint-large {
+            font-size: 27px;
+            text-align: center;
+        }
         @include breakpoint-very-large {
             font-size: 27px;
             text-align: center;
@@ -19,6 +24,13 @@
         }
     }
     &__list {
+        @include breakpoint-large {
+            display: flex;
+            margin: 0 auto;
+            padding: 40px 0;
+            column-gap: 70px;
+            width: max-content;
+        }
         @include breakpoint-very-large {
             display: flex;
             margin: 0 auto;

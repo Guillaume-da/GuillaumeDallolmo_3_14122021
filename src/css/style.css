@@ -213,6 +213,12 @@ html {
   font-weight: bold;
   margin-bottom: 10px;
 }
+@media (min-width: 1080px) {
+  .how-it-works__title {
+    font-size: 27px;
+    text-align: center;
+  }
+}
 @media (min-width: 1500px) {
   .how-it-works__title {
     font-size: 27px;
@@ -224,6 +230,15 @@ html {
 }
 .how-it-works__icon--colorized {
   color: #9356DC;
+}
+@media (min-width: 1080px) {
+  .how-it-works__list {
+    display: flex;
+    margin: 0 auto;
+    padding: 40px 0;
+    column-gap: 70px;
+    width: max-content;
+  }
 }
 @media (min-width: 1500px) {
   .how-it-works__list {
@@ -585,6 +600,11 @@ html {
 }
 @media (min-width: 1080px) {
   .restaurants__item-link {
+    width: 48%;
+  }
+}
+@media (min-width: 1500px) {
+  .restaurants__item-link {
     width: 35%;
   }
 }
@@ -604,7 +624,7 @@ html {
   position: relative;
 }
 .restaurants__item-title {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
   margin-bottom: 8px;
 }
@@ -671,6 +691,13 @@ html {
   margin-top: -50px;
   padding: 30px;
 }
+@media (min-width: 1080px) {
+  .footer {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+  }
+}
 @media (min-width: 1500px) {
   .footer {
     align-items: center;
@@ -686,6 +713,12 @@ html {
   margin-bottom: 20px;
   width: 30%;
 }
+@media (min-width: 1080px) {
+  .footer__svg {
+    margin-bottom: 0;
+    width: 100%;
+  }
+}
 @media (min-width: 1500px) {
   .footer__svg {
     margin-bottom: 0;
@@ -695,6 +728,12 @@ html {
 .footer__list a {
   color: white;
   text-decoration: none;
+}
+@media (min-width: 1080px) {
+  .footer__list {
+    column-gap: 65px;
+    display: flex;
+  }
 }
 @media (min-width: 1500px) {
   .footer__list {
@@ -723,6 +762,19 @@ html {
 @media (min-width: 1500px) {
   .footer__icon {
     margin-right: 5px;
+  }
+}
+.footer__list-column:last-child {
+  margin-top: 10px;
+}
+@media (min-width: 1080px) {
+  .footer__list-column:last-child {
+    margin-top: 0;
+  }
+}
+@media (min-width: 1500px) {
+  .footer__list-column:last-child {
+    margin-top: 0;
   }
 }
 

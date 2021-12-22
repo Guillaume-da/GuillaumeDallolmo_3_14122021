@@ -3,6 +3,11 @@
     color: white;
     margin-top: -50px;
     padding: 30px;
+    @include breakpoint-large {
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+    }
     @include breakpoint-very-large {
         align-items: center;
         justify-content: space-between;
@@ -15,6 +20,11 @@
         color: white;
         margin-bottom: 20px;
         width: 30%;
+
+        @include breakpoint-large {
+            margin-bottom: 0;
+            width: 100%;
+        }
         @include breakpoint-very-large {
             margin-bottom: 0;
             width: 100%;
@@ -24,6 +34,10 @@
         a {
             color: white;
             text-decoration: none;
+        }
+        @include breakpoint-large {
+            column-gap: 65px;
+            display: flex;
         }
         @include breakpoint-very-large {
             column-gap: 65px;
@@ -50,6 +64,16 @@
 
         @include breakpoint-very-large {
             margin-right: 5px;
+        }
+    }
+    &__list-column:last-child {
+        margin-top: 10px;
+
+        @include breakpoint-large {
+            margin-top: 0;
+        }
+        @include breakpoint-very-large {
+            margin-top: 0;
         }
     }
 }
