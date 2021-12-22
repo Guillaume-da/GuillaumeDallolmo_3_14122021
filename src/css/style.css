@@ -96,7 +96,6 @@ html {
     opacity: 0.85;
   }
   100% {
-    display: none;
     opacity: 0;
     z-index: -1;
   }
@@ -107,6 +106,9 @@ html {
 }
 .header__arrow-link {
   color: black;
+}
+.header__arrow-link:hover {
+  cursor: pointer;
 }
 .header__arrow {
   font-size: 18px;
@@ -148,6 +150,9 @@ html {
   color: white;
   font-weight: bold;
   transition: all 0.5s ease-in-out;
+}
+.button:hover {
+  cursor: pointer;
 }
 
 .call-to-action {
@@ -351,6 +356,7 @@ html {
 }
 .menu__heart-icon-container:hover .menu__heart-icon--colorized {
   transform: scale(1.1);
+  cursor: pointer;
 }
 .menu__heart-icon {
   font-size: 30px;
@@ -460,6 +466,7 @@ html {
 }
 .menu__item:hover {
   display: flex;
+  cursor: pointer;
 }
 .menu__item:hover .menu__check-icon-container {
   transform: translateX(-150px);
@@ -471,7 +478,7 @@ html {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  width: 82%;
+  width: 80%;
 }
 .menu__item:hover .menu__check-icon {
   transform: rotate(360deg);
@@ -528,54 +535,68 @@ html {
 
 @keyframes slide-top {
   0% {
-    -webkit-transform: translateY(0);
     transform: translateY(0);
     opacity: 0;
   }
   100% {
-    -webkit-transform: translateY(-25px);
     transform: translateY(-25px);
     opacity: 1;
   }
 }
-.menu__content .menu__item:nth-child(1n) {
+.menu__content > .menu__item:nth-child(1) {
   animation-delay: 0.15s;
 }
 
-.menu__content .menu__item:nth-child(2n) {
+.menu__content > .menu__item:nth-child(2) {
   animation-delay: 0.3s;
 }
 
-.menu__content .menu__item:nth-child(3n) {
+.menu__content > .menu__item:nth-child(3) {
   animation-delay: 0.45s;
 }
 
-.menu__content .menu__item:nth-child(4n) {
+.menu__content > .menu__item:nth-child(4) {
   animation-delay: 0.6s;
 }
 
-.menu__content .menu__item:nth-child(5n) {
+.menu__content > .menu__item:nth-child(5) {
   animation-delay: 0.75s;
 }
 
-.menu__content .menu__item:nth-child(6n) {
+.menu__content > .menu__item:nth-child(6) {
   animation-delay: 0.9s;
 }
 
-.menu__content .menu__item:nth-child(7n) {
+.menu__content > .menu__item:nth-child(7) {
   animation-delay: 1.05s;
 }
 
-.menu__content .menu__item:nth-child(8n) {
+.menu__content > .menu__item:nth-child(8) {
   animation-delay: 1.2s;
 }
 
-.menu__content .menu__item:nth-child(9n) {
+.menu__content > .menu__item:nth-child(9) {
   animation-delay: 1.35s;
 }
 
-.menu__content .menu__item:nth-child(10n) {
+.menu__content > .menu__item:nth-child(10) {
   animation-delay: 1.5s;
+}
+
+.menu__content > .menu__item:nth-child(11) {
+  animation-delay: 1.65s;
+}
+
+.menu__content > .menu__item:nth-child(12) {
+  animation-delay: 1.8s;
+}
+
+.menu__content > .menu__item:nth-child(13) {
+  animation-delay: 1.95s;
+}
+
+.menu__content > .menu__item:nth-child(14) {
+  animation-delay: 2.1s;
 }
 
 .restaurants {

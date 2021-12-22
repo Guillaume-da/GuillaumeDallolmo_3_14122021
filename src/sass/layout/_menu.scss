@@ -33,6 +33,7 @@
         &:hover {
             .menu__heart-icon--colorized {
                 transform: scale(1.1);
+                cursor: pointer;
             }
         }
     }
@@ -53,7 +54,6 @@
             transition: all 0.4s ease-in-out;
             transform: scale(0);
         }
-        
     }
     &__item-text-container {
         padding: 15px;
@@ -136,6 +136,7 @@
         width: 100%;
         &:hover {
             display: flex;
+            cursor: pointer;
             .menu__check-icon-container {
                 transform: translateX(-150px);
             }
@@ -146,7 +147,7 @@
                 text-overflow: ellipsis;
                 white-space: nowrap;
                 overflow: hidden;
-                width: 82%;
+                width: 80%;
             }
             .menu__check-icon {
                 transform: rotate(360deg);
@@ -204,21 +205,19 @@
 
   @keyframes slide-top {
     0% {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
-              opacity: 0;
+        transform: translateY(0);
+        opacity: 0;
     }
     100% {
-      -webkit-transform: translateY(-25px);
-              transform: translateY(-25px);
-              opacity: 1;
+        transform: translateY(-25px);
+        opacity: 1;
     }
   }
 
-  // Add delay to each item
+// Add delay to each item
 
-@for $i from 1 through 10 {
-    .menu__content .menu__item:nth-child(#{$i}n) {
+@for $i from 1 through 14 {
+    .menu__content > .menu__item:nth-child(#{$i}) {
         animation-delay: #{$i * 0.15}s;
     }
 }

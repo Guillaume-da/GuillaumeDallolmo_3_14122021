@@ -3,6 +3,9 @@
     position: relative;
     &__arrow-link {
         color: black;
+        &:hover {
+            cursor: pointer;
+        }
     }
     &__arrow {
         font-size: 18px;
