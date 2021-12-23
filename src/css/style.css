@@ -326,16 +326,21 @@ html {
 .menu__title-container {
   align-items: center;
   display: flex;
-  column-gap: 4.5%;
+  column-gap: 5.5%;
+}
+@media (min-width: 768px) {
+  .menu__title-container {
+    column-gap: 4%;
+  }
 }
 @media (min-width: 1020px) {
   .menu__title-container {
-    column-gap: 7.5%;
+    column-gap: 7%;
   }
 }
 @media (min-width: 1500px) {
   .menu__title-container {
-    column-gap: 7.5%;
+    column-gap: 8.5%;
   }
 }
 .menu__title {
@@ -390,17 +395,17 @@ html {
 }
 @media (min-width: 768px) {
   .menu__item-text-container {
-    width: 140%;
+    width: 140vw;
   }
 }
 @media (min-width: 1020px) {
   .menu__item-text-container {
-    width: 220%;
+    width: 220vw;
   }
 }
 @media (min-width: 1500px) {
   .menu__item-text-container {
-    width: 230%;
+    width: 230vw;
   }
 }
 .menu__content {

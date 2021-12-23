@@ -9,12 +9,15 @@
     &__title-container {
         align-items: center;
         display: flex;
-        column-gap: 4.5%;
+        column-gap: 5.5%;
+        @include breakpoint-small {
+            column-gap: 4%;
+        }
         @include breakpoint-large {
-            column-gap: 7.5%;
+            column-gap: 7%;
         }
         @include breakpoint-very-large {
-            column-gap: 7.5%;
+            column-gap: 8.5%;
         }
     }
     &__title {
@@ -65,13 +68,13 @@
         width: 100%;
 
         @include breakpoint-small {
-            width: 140%;
+            width: 140vw;
         }
         @include breakpoint-large {
-            width: 220%;
+            width: 220vw;
         }
         @include breakpoint-very-large {
-            width: 230%;
+            width: 230vw;
         }
     }
     &__content {
