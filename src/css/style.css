@@ -350,9 +350,7 @@ html {
   }
 }
 .menu__heart-icon-container {
-  font-size: 30px;
   position: relative;
-  width: 45px;
 }
 .menu__heart-icon-container:hover .menu__heart-icon--colorized {
   transform: scale(1.1);
@@ -524,7 +522,7 @@ html {
   font-size: 3.9vw;
   justify-content: space-between;
   transition: width 0.55s ease-in-out;
-  width: calc(100% + 50px);
+  width: calc(100% + 14vw);
 }
 @media (min-width: 768px) {
   .menu__item-description-container {
