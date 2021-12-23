@@ -735,7 +735,7 @@ html {
   background: #353535;
   color: white;
   margin-top: -50px;
-  padding: 30px;
+  padding: 40px 30px;
 }
 @media (min-width: 1020px) {
   .footer {
@@ -757,7 +757,7 @@ html {
 .footer__svg {
   color: white;
   margin-bottom: 20px;
-  width: 30%;
+  width: 41%;
 }
 @media (min-width: 1020px) {
   .footer__svg {

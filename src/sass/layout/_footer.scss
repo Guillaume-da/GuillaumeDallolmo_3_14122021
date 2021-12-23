@@ -2,7 +2,7 @@
     background: #353535;
     color: white;
     margin-top: -50px;
-    padding: 30px;
+    padding: 40px 30px;
     @include breakpoint-large {
         align-items: center;
         justify-content: space-between;
@@ -19,7 +19,7 @@
     &__svg {
         color: white;
         margin-bottom: 20px;
-        width: 30%;
+        width: 41%;
 
         @include breakpoint-large {
             margin-bottom: 0;
