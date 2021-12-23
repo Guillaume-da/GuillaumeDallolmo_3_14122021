@@ -19,7 +19,7 @@
     }
     &__title {
         font-family: 'Shrikhand', cursive;
-        font-size: 30px;
+        font-size: 7.4vw;
         width: 80%;
         @include breakpoint-small {
             font-size: 37px;
@@ -38,11 +38,14 @@
         }
     }
     &__heart-icon {
-        font-size: 30px;
+        font-size: 8.75vw;
         margin-left: 5px;
+        @include breakpoint-small {
+            font-size: 37px;
+        }
         &--colorized {
             background-clip: text;
-            font-size: 30px;
+            font-size: 8.75vw;
             background: -webkit-linear-gradient(240deg, $primary-color, $secondary-color);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -53,6 +56,10 @@
             left: 5px;
             transition: all 0.4s ease-in-out;
             transform: scale(0);
+
+            @include breakpoint-small {
+                font-size: 37px;
+            }
         }
     }
     &__item-text-container {
@@ -109,6 +116,9 @@
         position: relative;
         margin-left: 10px;
 
+        @include breakpoint-large {
+            font-size: 20px;
+        }
         @include breakpoint-very-large {
             font-size: 21px;
         }
@@ -147,7 +157,13 @@
                 text-overflow: ellipsis;
                 white-space: nowrap;
                 overflow: hidden;
-                width: 80%;
+                width: 55vw;
+            }
+            .menu__item-title {
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+                width: 55vw;
             }
             .menu__check-icon {
                 transform: rotate(360deg);
@@ -155,23 +171,27 @@
         }
     }
     &__item-title {
-        font-size: 18px;
+        font-size: 4.5vw;
         font-weight: bold;
         margin-bottom: 10px;
 
+        @include breakpoint-small {
+            font-size: 26px;
+        }
         @include breakpoint-very-large {
             font-size: 22px;
         }
     }
     &__item-description-container {
         display: flex;
-        font-size: 14px;
+        font-size: 3.9vw;
         justify-content: space-between;
         transition: width 0.55s ease-in-out;
         width: calc(100% + 50px);
         
         @include breakpoint-small {
-            width: calc(100% + 75px);
+            font-size: 19px;
+            width: calc(100% + 80px);
         }
         @include breakpoint-very-large {
             font-size: 18px;
@@ -199,7 +219,6 @@
         }
     }
 }
-
 
 // Menu animation on loading page
 

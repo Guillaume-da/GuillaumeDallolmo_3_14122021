@@ -40,6 +40,6 @@
 
 // Button hover effect
 @mixin button-hover($colour:$primary-color, $colour2: $secondary-color) {
-    background: linear-gradient(350deg, lighten($colour, 10%), lighten($colour2, 10%));
+    background: linear-gradient(350deg, lighten($colour, 5%), lighten($colour2, 5%));
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
