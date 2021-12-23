@@ -78,6 +78,7 @@
         width: 45px;
         &:hover {
             .restaurants__heart-icon--colorized {
+                left: 5px;
                 transform: scale(1.1);
             }
         }
@@ -95,7 +96,7 @@
             font-weight: 900; 
             content: "\f004";
             position: absolute;
-            left: 5px;
+            left: 0;
             transition: all 0.4s ease-in-out;
             transform: scale(0);
             width: 40px;

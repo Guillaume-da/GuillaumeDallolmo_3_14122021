@@ -21,6 +21,9 @@
         margin-bottom: 20px;
         width: 41%;
 
+        @include breakpoint-small {
+            width: 28%;
+        }
         @include breakpoint-large {
             margin-bottom: 0;
             width: 100%;

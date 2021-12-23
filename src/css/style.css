@@ -47,6 +47,7 @@ table {
 
 body {
   font-family: "Roboto", sans-serif;
+  margin: 0 auto;
   max-width: 1980px;
 }
 
@@ -358,11 +359,12 @@ html {
   position: relative;
 }
 .menu__heart-icon-container:hover .menu__heart-icon--colorized {
+  left: 6px;
   transform: scale(1.1);
   cursor: pointer;
 }
 .menu__heart-icon {
-  font-size: 8.75vw;
+  font-size: 27px;
   margin-left: 5px;
 }
 @media (min-width: 768px) {
@@ -372,7 +374,7 @@ html {
 }
 .menu__heart-icon--colorized {
   background-clip: text;
-  font-size: 8.75vw;
+  font-size: 27px;
   background: -webkit-linear-gradient(240deg, #9356DC, #FF79DA);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -380,7 +382,7 @@ html {
   font-weight: 900;
   content: "\f004";
   position: absolute;
-  left: 5px;
+  left: 0;
   transition: all 0.4s ease-in-out;
   transform: scale(0);
   width: 40px;
@@ -388,6 +390,11 @@ html {
 @media (min-width: 768px) {
   .menu__heart-icon--colorized {
     font-size: 37px;
+  }
+}
+@media (min-width: 1500px) {
+  .menu__heart-icon--colorized {
+    left: 4px;
   }
 }
 .menu__item-text-container {
@@ -716,6 +723,7 @@ html {
   width: 45px;
 }
 .restaurants__heart-icon-container:hover .restaurants__heart-icon--colorized {
+  left: 5px;
   transform: scale(1.1);
 }
 .restaurants__heart-icon {
@@ -732,7 +740,7 @@ html {
   font-weight: 900;
   content: "\f004";
   position: absolute;
-  left: 5px;
+  left: 0;
   transition: all 0.4s ease-in-out;
   transform: scale(0);
   width: 40px;
@@ -765,6 +773,11 @@ html {
   color: white;
   margin-bottom: 20px;
   width: 41%;
+}
+@media (min-width: 768px) {
+  .footer__svg {
+    width: 28%;
+  }
 }
 @media (min-width: 1020px) {
   .footer__svg {

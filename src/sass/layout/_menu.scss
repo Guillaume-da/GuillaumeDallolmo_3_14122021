@@ -33,20 +33,21 @@
         position: relative;
         &:hover {
             .menu__heart-icon--colorized {
+                left: 6px;
                 transform: scale(1.1);
                 cursor: pointer;
             }
         }
     }
     &__heart-icon {
-        font-size: 8.75vw;
+        font-size: 27px;
         margin-left: 5px;
         @include breakpoint-small {
             font-size: 37px;
         }
         &--colorized {
             background-clip: text;
-            font-size: 8.75vw;
+            font-size: 27px;
             background: -webkit-linear-gradient(240deg, $primary-color, $secondary-color);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -54,13 +55,16 @@
             font-weight: 900; 
             content: "\f004";
             position: absolute;
-            left: 5px;
+            left: 0;
             transition: all 0.4s ease-in-out;
             transform: scale(0);
             width: 40px;
 
             @include breakpoint-small {
                 font-size: 37px;
+            }
+            @include breakpoint-very-large {
+                left: 4px;
             }
         }
     }
