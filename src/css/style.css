@@ -383,6 +383,7 @@ html {
   left: 5px;
   transition: all 0.4s ease-in-out;
   transform: scale(0);
+  width: 40px;
 }
 @media (min-width: 768px) {
   .menu__heart-icon--colorized {
@@ -701,7 +702,7 @@ html {
 }
 @media (min-width: 1500px) {
   .restaurants__img {
-    height: 265px;
+    height: 320px;
   }
 }
 .restaurants__text-container {
@@ -734,6 +735,7 @@ html {
   left: 5px;
   transition: all 0.4s ease-in-out;
   transform: scale(0);
+  width: 40px;
 }
 
 .footer {
