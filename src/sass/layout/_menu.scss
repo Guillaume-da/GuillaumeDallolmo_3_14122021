@@ -9,7 +9,7 @@
     &__title-container {
         align-items: center;
         display: flex;
-        column-gap: 5.5%;
+        column-gap: 3%;
         @include breakpoint-small {
             column-gap: 4%;
         }
@@ -193,7 +193,7 @@
         font-size: 3.9vw;
         justify-content: space-between;
         transition: width 0.55s ease-in-out;
-        width: calc(100% + 14vw);
+        width: calc(100% + 5.5vw);
         
         @include breakpoint-small {
             font-size: 19px;
@@ -203,6 +203,12 @@
             font-size: 18px;
             width: calc(100% + 85px);
         }
+    }
+    .menu__item-description-container span:first-child {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 71vw;
     }
     &__item-price {
         font-weight: bold;
