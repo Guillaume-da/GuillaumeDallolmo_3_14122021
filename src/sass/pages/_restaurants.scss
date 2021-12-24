@@ -14,17 +14,6 @@
         }
         
     }
-    &__item-link {
-        color: black;
-        text-decoration: none;
-        
-        @include breakpoint-large {
-            width: 48%;
-        }
-        @include breakpoint-very-large {
-            width: 35%;
-        }
-    }
     &__container {
         @include breakpoint-large {
             display: flex;
@@ -39,8 +28,19 @@
         box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
         margin-bottom: 20px;
         position: relative;
+
+        @include breakpoint-large {
+            width: 48%;
+        }
+        @include breakpoint-very-large {
+            width: 35%;
+        }
+    }
+    &__item-link {
+        text-decoration: none;
     }
     &__item-title {
+        color: black;
         font-size: 18px;
         font-weight: bold;
         margin-bottom: 8px;
@@ -73,10 +73,13 @@
         justify-content: space-between;
     }
     &__heart-icon-container {
+        height: 32px;
         font-size: 30px;
         position: relative;
-        width: 45px;
+        width: 40px;
+       
         &:hover {
+            cursor: pointer;
             .restaurants__heart-icon--colorized {
                 left: 5px;
                 transform: scale(1.1);
@@ -86,6 +89,7 @@
     &__heart-icon {
         font-size: 30px;
         margin-left: 5px;
+        
         &--colorized {
             background-clip: text;
             font-size: 30px;
@@ -101,6 +105,5 @@
             transform: scale(0);
             width: 40px;
         }
-        
     }
 }
