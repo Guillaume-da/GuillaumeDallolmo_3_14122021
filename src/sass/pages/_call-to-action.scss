@@ -13,28 +13,28 @@
         padding: 18px 0;
     }
     &__content {
-        padding: 60px 20px;
+        padding: 45px 35px 85px 35px;
         p {
             font-size: 20px;
             font-weight: 100;
             line-height: 25px;
-            margin-bottom: 30px;
+            margin-bottom: 55px;
         }
 
         @include breakpoint-very-large {
-            padding: 120px 20px;
+            padding: 100px 20px 135px 20px;
         }
     }
     &__title {
-        font-size: 31px;
+        font-size: 29px;
         font-weight: bold;
         line-height: 35px;
         margin-bottom: 20px;
     }
     &__button {
         font-size: 16px;
-        margin-top: 20px;
         padding: 20px;
+        text-decoration: none;
 
         &:hover {
             @include button-hover;

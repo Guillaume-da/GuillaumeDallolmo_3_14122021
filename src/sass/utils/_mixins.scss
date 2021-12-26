@@ -35,7 +35,11 @@
 
 // Primary color lighted
 @mixin highlighted-color($colour:$primary-color) {
-    background: lighten($colour, 34%);
+    background: lighten($colour, 33%);
+}
+
+@mixin new-text-color($colour:$third-color) {
+    color: darken($colour, 38%);
 }
 
 // Button hover effect (primary and secondary colors lighted and add shadow)
