@@ -364,6 +364,7 @@ html {
   cursor: pointer;
 }
 .menu__heart-icon {
+  background: transparent;
   border: none;
   font-size: 27px;
 }
