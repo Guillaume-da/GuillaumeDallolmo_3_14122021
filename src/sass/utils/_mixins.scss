@@ -38,6 +38,7 @@
     background: lighten($colour, 33%);
 }
 
+// Text color for new restaurant badge
 @mixin new-text-color($colour:$third-color) {
     color: darken($colour, 38%);
 }
