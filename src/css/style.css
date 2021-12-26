@@ -733,12 +733,12 @@ html {
   cursor: pointer;
 }
 .restaurants__heart-icon-container:hover .restaurants__heart-icon--colorized {
-  left: 5px;
+  left: 7px;
   transform: scale(1.1);
 }
 .restaurants__heart-icon {
+  border: none;
   font-size: 30px;
-  margin-left: 5px;
 }
 .restaurants__heart-icon--colorized {
   background-clip: text;
@@ -751,6 +751,7 @@ html {
   content: "\f004";
   position: absolute;
   left: 0;
+  top: 0;
   transition: all 0.4s ease-in-out;
   transform: scale(0);
   width: 40px;
