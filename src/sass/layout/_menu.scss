@@ -33,15 +33,16 @@
         position: relative;
         &:hover {
             .menu__heart-icon--colorized {
-                left: 6px;
-                transform: scale(1.1);
+                left: 7px;
+                transform: scale(1.15);
                 cursor: pointer;
             }
         }
     }
     &__heart-icon {
+        border: none;
         font-size: 27px;
-        margin-left: 5px;
+
         @include breakpoint-small {
             font-size: 37px;
         }
