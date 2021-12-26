@@ -741,6 +741,7 @@ html {
 .restaurants__heart-icon {
   border: none;
   font-size: 30px;
+  background: transparent;
 }
 .restaurants__heart-icon--colorized {
   background-clip: text;
