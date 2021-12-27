@@ -32,8 +32,7 @@
     &__heart-icon-container {
         position: relative;
         &:hover {
-            .menu__heart-icon--colorized {
-                left: 7px;
+            .menu__heart-icon::after {
                 transform: scale(1.15);
                 cursor: pointer;
             }
@@ -47,7 +46,7 @@
         @include breakpoint-small {
             font-size: 37px;
         }
-        &--colorized {
+        &::after {
             background-clip: text;
             font-size: 27px;
             background: -webkit-linear-gradient(240deg, $primary-color, $secondary-color);
@@ -64,6 +63,10 @@
 
             @include breakpoint-small {
                 font-size: 37px;
+                left: 4px;
+            }
+            @include breakpoint-large {
+                left: 4px;
             }
             @include breakpoint-very-large {
                 left: 4px;
