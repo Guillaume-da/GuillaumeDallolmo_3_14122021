@@ -497,7 +497,6 @@ html {
   width: 100%;
 }
 .menu__item:hover {
-  display: flex;
   cursor: pointer;
 }
 .menu__item:hover .menu__check-icon-container {
@@ -541,7 +540,7 @@ html {
   font-size: 3.9vw;
   justify-content: space-between;
   transition: width 0.55s ease-in-out;
-  width: calc(100% + 5.5vw);
+  width: calc(100% + 3.5vw);
 }
 @media (min-width: 768px) {
   .menu__item-description-container {
@@ -743,6 +742,11 @@ html {
 .restaurants__heart-icon-container:hover .restaurants__heart-icon--colorized {
   left: 6px;
   transform: scale(1.15);
+}
+@media (min-width: 1500px) {
+  .restaurants__heart-icon-container:hover .restaurants__heart-icon--colorized {
+    left: 5px;
+  }
 }
 .restaurants__heart-icon {
   border: none;

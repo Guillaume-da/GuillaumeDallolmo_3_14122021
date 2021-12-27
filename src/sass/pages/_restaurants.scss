@@ -86,6 +86,10 @@
             .restaurants__heart-icon--colorized {
                 left: 6px;
                 transform: scale(1.15);
+
+                @include breakpoint-very-large {
+                    left: 5px;
+                }
             }
         }
     }

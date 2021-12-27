@@ -156,7 +156,7 @@
         top: 25px;
         width: 100%;
         &:hover {
-            display: flex;
+            // display: flex;
             cursor: pointer;
             .menu__check-icon-container {
                 transform: translateX(-150px);
@@ -198,7 +198,7 @@
         font-size: 3.9vw;
         justify-content: space-between;
         transition: width 0.55s ease-in-out;
-        width: calc(100% + 5.5vw);
+        width: calc(100% + 3.5vw);
         
         @include breakpoint-small {
             font-size: 19px;
